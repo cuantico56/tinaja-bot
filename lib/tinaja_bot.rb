@@ -9,8 +9,8 @@ class TinajaBot
   end
 
   def setup
-    @bot.message(with_text: 'UNEXPO') do |event|
-      event.respond "Hola <@#{event.user.id}>! 𝘛𝘶𝘦𝘵𝘶𝘥𝘪𝘢𝘵𝘦 𝘦𝘯 𝘦𝘭 𝘱𝘰𝘭𝘪?"
+    @bot.message(with_text: /^unexpo$/i) do |event|
+      event.respond "Hola <@#{event.user.id}>!    ?"
     end
   end
 
